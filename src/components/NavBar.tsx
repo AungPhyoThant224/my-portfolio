@@ -24,139 +24,157 @@ import {
   moon,
   sunny,
 } from "../assets/images";
-import { btnBg } from "../theme/colors";
+import { title, navLinks } from "../data/navBar";
+import {
+  primaryBorder,
+  primaryBtnBackground,
+  primaryGradientBorder,
+  secText,
+} from "../theme/colors";
+import parse from "html-react-parser";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const links = [
-    { title: "About", link: "#about" },
-    { title: "Skill", link: "#skill" },
-    { title: "Experience", link: "#experience" },
-    { title: "Contact", link: "#contact" },
-  ];
-
   const { toggleColorMode, colorMode } = useColorMode();
 
   return (
-    <Grid templateColumns="repeat(2, 1fr)">
-      <GridItem>
-        <Link href="#" style={{ textDecoration: "none" }}>
-          <Box
-            textAlign={"center"}
-            width={"fit-content"}
-            paddingTop={5}
-            paddingBottom={6}
-          >
-            <Text>Aung Phyo Thant</Text>
-          </Box>
-        </Link>
-      </GridItem>
-      <Show above="md">
+    <>
+      <Grid templateColumns="230px auto" alignItems={"center"}>
         <GridItem>
-          <Grid
-            templateColumns="repeat(5, minmax(80px, 1fr))"
-            height={"100%"}
-            alignItems={"center"}
-            textAlign={"center"}
-          >
-            {links.map((link, idx) => (
-              <GridItem key={idx}>
-                <Box>
-                  <Text>
-                    <Link
-                      href={link.link}
-                      fontSize={18}
-                      style={{ textDecoration: "none" }}
-                      _hover={{
-                        fontWeight: "500",
-                      }}
-                    >
-                      {link.title}
-                    </Link>
-                  </Text>
-                </Box>
-              </GridItem>
-            ))}
-            <GridItem>
-              <Image
-                src={colorMode === "dark" ? sunny : moon}
-                alt="colorMode"
-                onClick={toggleColorMode}
-                margin={"auto"}
-                width={"32px"}
-                height={"32px"}
-                _hover={{ cursor: "pointer" }}
-              />
-            </GridItem>
-          </Grid>
-        </GridItem>
-      </Show>
-      <Hide above="md">
-        <Box textAlign={"right"} paddingTop={6}>
-          <Button
-            onClick={onOpen}
-            colorScheme=""
-            background={btnBg()}
-            color={"white"}
-            padding={3}
-          >
-            {""}
-            <Image
-              src={colorMode === "dark" ? menu : menuWhite}
-              height={6}
-              width={6}
-              alt="menu"
-            />
-          </Button>
-        </Box>
-        <Drawer
-          onClose={onClose}
-          isOpen={isOpen}
-          placement="right"
-          returnFocusOnClose={false}
-        >
-          <DrawerOverlay />
-          <DrawerContent>
-            <Box textAlign={"right"}>
-              <Button
-                onClick={() => {
-                  onClose();
-                }}
-                background={"transparent"}
-                padding={3}
-              >
-                <Image
-                  src={colorMode === "dark" ? closeWhite : close}
-                  width={6}
-                  height={6}
-                  alt="close"
-                />
-              </Button>
+          <Link href="#" style={{ textDecoration: "none" }}>
+            <Box textAlign={"center"} width={"fit-content"} paddingY={5}>
+              <Text fontFamily={"Tiny5"} fontWeight={"bold"} fontSize={"3xl"}>
+                {parse(title)}
+              </Text>
             </Box>
-            {links.map((link, idx) => (
-              <DrawerHeader key={idx}>
-                <Link
-                  href={link.link}
-                  style={{ textDecoration: "none" }}
+          </Link>
+        </GridItem>
+        <Show above="md">
+          <Box display={"flex"} justifyContent={"end"} alignItems={"center"}>
+            <Grid templateColumns="auto auto" alignItems={"center"}>
+              <GridItem lineHeight={0}>
+                <HStack spacing={12}>
+                  {navLinks.map((link, idx) => (
+                    <Box width={""} key={idx}>
+                      <Text>
+                        <Link
+                          href={link.link}
+                          fontSize={"xl"}
+                          style={{ textDecoration: "none" }}
+                          _hover={{
+                            color: secText(),
+                          }}
+                        >
+                          {link.title}
+                        </Link>
+                      </Text>
+                    </Box>
+                  ))}
+                </HStack>
+              </GridItem>
+              <GridItem>
+                <HStack>
+                  <Box
+                    marginLeft={"4"}
+                    marginRight={"2"}
+                    height={"20px"}
+                    width={"1px"}
+                    background={primaryBorder()}
+                  ></Box>
+                  <Button
+                    onClick={toggleColorMode}
+                    colorScheme=""
+                    background={primaryBtnBackground()}
+                    color={"white"}
+                    padding={3}
+                  >
+                    <Image
+                      src={colorMode === "dark" ? sunny : moon}
+                      alt="colorMode"
+                      width={"32px"}
+                      height={"32px"}
+                    />
+                  </Button>
+                </HStack>
+              </GridItem>
+            </Grid>
+          </Box>
+        </Show>
+        <Hide above="md">
+          <Box textAlign={"right"}>
+            <Button
+              onClick={onOpen}
+              colorScheme=""
+              background={primaryBtnBackground()}
+              color={"white"}
+              padding={3}
+            >
+              {""}
+              <Image
+                src={colorMode === "dark" ? menuWhite : menu}
+                height={6}
+                width={6}
+                alt="menu"
+              />
+            </Button>
+          </Box>
+          <Drawer
+            onClose={onClose}
+            isOpen={isOpen}
+            placement="right"
+            returnFocusOnClose={false}
+          >
+            <DrawerOverlay />
+            <DrawerContent>
+              <Box textAlign={"right"}>
+                <Button
                   onClick={() => {
                     onClose();
                   }}
+                  background={"transparent"}
+                  padding={3}
                 >
-                  {link.title}
-                </Link>
+                  <Image
+                    src={colorMode === "dark" ? closeWhite : close}
+                    width={6}
+                    height={6}
+                    alt="close"
+                  />
+                </Button>
+              </Box>
+              {navLinks.map((link, idx) => (
+                <DrawerHeader key={idx}>
+                  <Link
+                    href={link.link}
+                    style={{ textDecoration: "none" }}
+                    onClick={() => {
+                      onClose();
+                    }}
+                  >
+                    {link.title}
+                  </Link>
+                </DrawerHeader>
+              ))}
+              <DrawerHeader>
+                <HStack
+                  onClick={toggleColorMode}
+                  _hover={{ cursor: "pointer" }}
+                >
+                  <Text>Preference</Text>
+                  <Image src={colorMode === "dark" ? sunny : moon} />
+                </HStack>
               </DrawerHeader>
-            ))}
-            <DrawerHeader>
-              <HStack onClick={toggleColorMode} _hover={{ cursor: "pointer" }}>
-                <Text>{colorMode === "dark" ? "Light Mode" : "Dark Mode"}</Text>
-                <Image src={colorMode === "dark" ? sunny : moon} />
-              </HStack>
-            </DrawerHeader>
-          </DrawerContent>
-        </Drawer>
-      </Hide>
-    </Grid>
+            </DrawerContent>
+          </Drawer>
+        </Hide>
+      </Grid>
+      <Box
+        bgGradient={primaryGradientBorder()}
+        width={"100%"}
+        height={"1px"}
+      ></Box>
+    </>
   );
 };
 

@@ -1,37 +1,49 @@
 import { useColorModeValue } from "@chakra-ui/react";
 
 //Background
-const bgWhite = () => useColorModeValue("white", "gray.900");
-const bgGray = () => useColorModeValue("gray.50", "gray.800");
+const primaryBackground = () => useColorModeValue("gray.50", "gray.800");
+
+//Border
+const primaryGradientBorder = () =>
+  useColorModeValue(
+    "linear(to-l, gray.50, red, gray.50)",
+    "linear(to-l, gray.800, red.500, gray.800)"
+  );
+const primaryBorder = () => useColorModeValue("red", "red.500");
+const terminalBoarder = () => useColorModeValue("white", "white");
 
 //Text
+const primaryText = () => useColorModeValue("blackAlpha.700", "whiteAlpha.600");
+const secText = () => useColorModeValue("red", "red.500");
 const secHeading = () => useColorModeValue("blackAlpha.400", "whiteAlpha.600");
-const text = () => useColorModeValue("blackAlpha.700", "whiteAlpha.600");
-const secText = () => useColorModeValue("red", "red");
 
 //Card
-const cardWhite = () => useColorModeValue("white", "gray.700");
+const primaryCard = () => useColorModeValue("white", "gray.700");
 
 //Button
-const btnBg = () => useColorModeValue("gray.50", "gray.800");
-const btnBorder = () => useColorModeValue("red", "red");
-const btnText = () => useColorModeValue("red", "red");
+const primaryBtnBackground = () => useColorModeValue("gray.100", "gray.700");
+const primaryBtnBorder = () => useColorModeValue("red", "#FF3A3A");
+const primaryBtnText = () => useColorModeValue("red", "#FF3A3A");
 
 export {
   //Background
-  bgWhite,
-  bgGray,
+  primaryBackground,
+
+  //Border
+  primaryGradientBorder,
+  primaryBorder,
+  terminalBoarder,
 
   //Text
-  secHeading,
-  text,
+  primaryText,
   secText,
+  secHeading,
 
   //Card
-  cardWhite,
+  primaryCard,
 
   //Button
-  btnBg,
-  btnBorder,
-  btnText,
+  primaryBtnBackground,
+  primaryBtnBorder,
+  primaryBtnText,
 };

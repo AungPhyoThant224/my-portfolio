@@ -12,16 +12,31 @@ interface Props {
 const Section = ({ id, maxWidth, background, as, children }: Props) => {
   return (
     <>
-      <Box id={id} backgroundColor={background} as={as}>
+      {as === "nav" ? (
         <Box
-          maxWidth={maxWidth}
-          margin={"auto"}
-          paddingX={5}
-          paddingY={as === "nav" || as === "footer" ? 0 : 10}
+          id={id}
+          position={"fixed"}
+          width={"100vw"}
+          zIndex={1}
+          backgroundColor={background}
+          as={as}
         >
-          {children}
+          <Box maxWidth={maxWidth} margin={"auto"} paddingX={5} paddingY={0}>
+            {children}
+          </Box>
         </Box>
-      </Box>
+      ) : (
+        <Box id={id} backgroundColor={background} as={as}>
+          <Box
+            maxWidth={maxWidth}
+            margin={"auto"}
+            paddingX={5}
+            paddingY={as === "footer" ? 0 : 10}
+          >
+            {children}
+          </Box>
+        </Box>
+      )}
     </>
   );
 };

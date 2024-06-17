@@ -1,13 +1,18 @@
 import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Section from "../../components/Section";
-import { bgGray, bgWhite } from "../../theme/colors";
+import { primaryBackground } from "../../theme/colors";
 import { AungPhyoThant } from "../../assets/images";
 
 const ErrorPage = () => {
   return (
-    <Box background={bgGray()} height={"100vh"}>
-      <Section id="nav-bar" maxWidth="1200px" background={bgWhite()} as={"nav"}>
+    <Box background={primaryBackground()} height={"100vh"}>
+      <Section
+        id="nav-bar"
+        maxWidth="1200px"
+        background={primaryBackground()}
+        as={"nav"}
+      >
         <Grid templateColumns="repeat(2, 1fr)">
           <GridItem>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -26,7 +31,7 @@ const ErrorPage = () => {
       <Section
         id="Error"
         maxWidth="1200px"
-        background={bgGray()}
+        background={primaryBackground()}
         as={"section"}
       >
         <Box>

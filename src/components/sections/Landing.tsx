@@ -1,6 +1,10 @@
 import { Box, Button, Heading, Image, SimpleGrid } from "@chakra-ui/react";
 import { AungPhyoThant } from "../../assets/images";
-import { btnBg, btnBorder, btnText } from "../../theme/colors";
+import {
+  primaryBtnBackground,
+  primaryBtnBorder,
+  primaryBtnText,
+} from "../../theme/colors";
 
 const Landing = () => {
   return (
@@ -22,10 +26,10 @@ const Landing = () => {
           <Button
             as={"a"}
             colorScheme=""
-            background={btnBg()}
-            color={btnText()}
+            background={primaryBtnBackground()}
+            color={primaryBtnText()}
             border="1px"
-            borderColor={btnBorder()}
+            borderColor={primaryBtnBorder()}
             marginY={2}
             href="#contact"
           >

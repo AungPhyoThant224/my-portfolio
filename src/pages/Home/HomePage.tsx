@@ -1,19 +1,24 @@
 import Footer from "../../components/Footer";
-import Landing from "../../components/sections/Landing";
 import NavBar from "../../components/NavBar";
 import Section from "../../components/Section";
-import { bgGray, bgWhite } from "../../theme/colors";
+import Landing from "../../components/sections/Landing";
+import { primaryBackground } from "../../theme/colors";
 
 const HomePage = () => {
   return (
     <>
-      <Section id="nav-bar" maxWidth="1200px" background={bgWhite()} as={"nav"}>
+      <Section
+        id="nav-bar"
+        maxWidth="1200px"
+        background={primaryBackground()}
+        as={"nav"}
+      >
         <NavBar />
       </Section>
       <Section
         id="landing"
         maxWidth="1200px"
-        background={bgGray()}
+        background={primaryBackground()}
         as={"section"}
       >
         <Landing />
@@ -21,7 +26,7 @@ const HomePage = () => {
       <Section
         id="footer"
         maxWidth="1200px"
-        background={bgWhite()}
+        background={primaryBackground()}
         as={"footer"}
       >
         <Footer />

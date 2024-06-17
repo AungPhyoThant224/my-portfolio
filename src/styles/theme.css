@@ -1,0 +1,7 @@
+[data-theme="light"] {
+  --sec-text: #ff0000;
+}
+
+[data-theme="dark"] {
+  --sec-text: #e53e3e;
+}
