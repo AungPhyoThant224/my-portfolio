@@ -22,8 +22,8 @@ const primaryCard = () => useColorModeValue("white", "gray.700");
 
 //Button
 const primaryBtnBackground = () => useColorModeValue("gray.100", "gray.700");
-const primaryBtnBorder = () => useColorModeValue("red", "#FF3A3A");
-const primaryBtnText = () => useColorModeValue("red", "#FF3A3A");
+const primaryBtnBorder = () => useColorModeValue("red", "red.500");
+const primaryBtnText = () => useColorModeValue("red", "red.500");
 
 export {
   //Background

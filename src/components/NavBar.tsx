@@ -16,6 +16,7 @@ import {
   useColorMode,
   useDisclosure,
 } from "@chakra-ui/react";
+import parse from "html-react-parser";
 import {
   close,
   closeWhite,
@@ -24,14 +25,13 @@ import {
   moon,
   sunny,
 } from "../assets/images";
-import { title, navLinks } from "../data/navBar";
+import { navLinks, title } from "../data/navBar";
 import {
   primaryBorder,
   primaryBtnBackground,
   primaryGradientBorder,
   secText,
 } from "../theme/colors";
-import parse from "html-react-parser";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

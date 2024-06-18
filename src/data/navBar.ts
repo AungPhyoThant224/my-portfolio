@@ -1,4 +1,4 @@
-const title = "A<span className='red-text'>P</span>T";
+const title = "A<span className='red-text bold-text'>P</span>T";
 
 const navLinks = [
   { title: "About", link: "#about" },

@@ -4,12 +4,22 @@ import { ReactNode } from "react";
 interface Props {
   id: string;
   maxWidth: string;
+  minHeight?: string;
+  display?: string;
   background: string;
   as: As;
   children: ReactNode;
 }
 
-const Section = ({ id, maxWidth, background, as, children }: Props) => {
+const Section = ({
+  id,
+  maxWidth,
+  minHeight,
+  display,
+  background,
+  as,
+  children,
+}: Props) => {
   return (
     <>
       {as === "nav" ? (
@@ -26,7 +36,13 @@ const Section = ({ id, maxWidth, background, as, children }: Props) => {
           </Box>
         </Box>
       ) : (
-        <Box id={id} backgroundColor={background} as={as}>
+        <Box
+          id={id}
+          minHeight={minHeight ? minHeight : "auto"}
+          display={display}
+          backgroundColor={background}
+          as={as}
+        >
           <Box
             maxWidth={maxWidth}
             margin={"auto"}
