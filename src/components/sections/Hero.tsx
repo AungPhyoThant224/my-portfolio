@@ -25,13 +25,11 @@ const Hero = () => {
   return (
     <>
       <SimpleGrid
-        paddingTop={48}
-        paddingBottom={28}
         columns={{ base: 1, md: 2 }}
         spacing={3}
         alignItems={"center"}
       >
-        <Box>
+        <Box marginBottom={{ base: 10, md: 0 }}>
           <Text
             data-aos="fade-right"
             data-aos-duration="500"

@@ -1,4 +1,4 @@
-import { As, Box } from "@chakra-ui/react";
+import { As, Box, ResponsiveValue } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface Props {
@@ -7,6 +7,30 @@ interface Props {
   minHeight?: string;
   display?: string;
   background: string;
+  paddingTop?:
+    | ResponsiveValue<
+        | number
+        | (string & {})
+        | "inherit"
+        | "-moz-initial"
+        | "initial"
+        | "revert"
+        | "revert-layer"
+        | "unset"
+      >
+    | undefined;
+  paddingBottom?:
+    | ResponsiveValue<
+        | number
+        | (string & {})
+        | "inherit"
+        | "-moz-initial"
+        | "initial"
+        | "revert"
+        | "revert-layer"
+        | "unset"
+      >
+    | undefined;
   as: As;
   children: ReactNode;
 }
@@ -17,6 +41,8 @@ const Section = ({
   minHeight,
   display,
   background,
+  paddingTop,
+  paddingBottom,
   as,
   children,
 }: Props) => {
@@ -47,7 +73,8 @@ const Section = ({
             maxWidth={maxWidth}
             margin={"auto"}
             paddingX={5}
-            paddingY={as === "footer" ? 0 : 10}
+            paddingTop={paddingTop}
+            paddingBottom={paddingBottom}
           >
             {children}
           </Box>

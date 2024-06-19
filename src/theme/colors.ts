@@ -15,7 +15,7 @@ const terminalBoarder = () => useColorModeValue("white", "white");
 //Text
 const primaryText = () => useColorModeValue("blackAlpha.700", "whiteAlpha.600");
 const secText = () => useColorModeValue("red", "red.500");
-const secHeading = () => useColorModeValue("blackAlpha.400", "whiteAlpha.600");
+const secHeading = () => useColorModeValue("blackAlpha.500", "whiteAlpha.600");
 
 //Card
 const primaryCard = () => useColorModeValue("white", "gray.700");
