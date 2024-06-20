@@ -12,7 +12,7 @@ import {
 import parse from "html-react-parser";
 import { heroText, socials, socialsDark, terminal } from "../../data/hero";
 import { primaryBtnBorder, primaryBtnText } from "../../theme/colors";
-import Terminal from "../terminal";
+import Terminal from "../Terminal";
 
 const Hero = () => {
   const { colorMode } = useColorMode();
@@ -29,7 +29,7 @@ const Hero = () => {
         spacing={3}
         alignItems={"center"}
       >
-        <Box marginBottom={{ base: 10, md: 0 }}>
+        <Box marginBottom={{ base: 4, md: 0 }}>
           <Text
             data-aos="fade-right"
             data-aos-duration="500"

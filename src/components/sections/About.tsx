@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import parse from "html-react-parser";
 import { about } from "../../data/about";
 import { secHeading } from "../../theme/colors";
@@ -29,12 +29,17 @@ const About = () => {
       <Box
         marginLeft={{ base: 0, lg: 10 }}
         marginBottom={{ base: 10, lg: 0 }}
-        borderRadius={"xl"}
+        textAlign={{ base: "center", lg: "left" }}
       >
-        <Text fontSize={"2xl"} fontWeight={"bold"}>
+        <Heading paddingBottom={4} as={"h2"} fontSize={"3xl"}>
           {parse(about.title)}
+        </Heading>
+        <Text paddingBottom={4} fontSize={"xl"}>
+          {parse(about.first_paragraph)}
         </Text>
-        <Text fontSize={"xl"}>{parse(about.text)}</Text>
+        <Text paddingBottom={4} fontSize={"xl"}>
+          {parse(about.second_paragraph)}
+        </Text>
       </Box>
     </Flex>
   );
