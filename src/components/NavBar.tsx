@@ -25,7 +25,7 @@ import {
   moon,
   sunny,
 } from "../assets/images";
-import { navLinks, title } from "../data/navBar";
+import navbar from "../data/navBar";
 import {
   primaryBorder,
   primaryBtnBackground,
@@ -45,7 +45,7 @@ const NavBar = () => {
           <Link href="#" style={{ textDecoration: "none" }}>
             <Box textAlign={"center"} width={"fit-content"} paddingY={5}>
               <Text fontFamily={"Tiny5"} fontWeight={"bold"} fontSize={"3xl"}>
-                {parse(title)}
+                {parse(navbar.title)}
               </Text>
             </Box>
           </Link>
@@ -55,7 +55,7 @@ const NavBar = () => {
             <Grid templateColumns="auto auto" alignItems={"center"}>
               <GridItem lineHeight={0}>
                 <HStack spacing={12}>
-                  {navLinks.map((link, idx) => (
+                  {navbar.navLinks.map((link, idx) => (
                     <Box width={""} key={idx}>
                       <Text>
                         <Link
@@ -143,7 +143,7 @@ const NavBar = () => {
                   />
                 </Button>
               </Box>
-              {navLinks.map((link, idx) => (
+              {navbar.navLinks.map((link, idx) => (
                 <DrawerHeader key={idx}>
                   <Link
                     href={link.link}

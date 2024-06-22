@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import parse from "html-react-parser";
-import { about } from "../../data/about";
+import about from "../../data/about";
 import { secHeading } from "../../theme/colors";
 
 const About = () => {

@@ -1,6 +1,6 @@
 import { Heading, Image, SimpleGrid } from "@chakra-ui/react";
 import parse from "html-react-parser";
-import { familiarWith, focusOn, title } from "../../data/skills";
+import skill from "../../data/skills";
 import Terminal from "../Terminal";
 
 const Skill = () => {
@@ -12,20 +12,20 @@ const Skill = () => {
         textAlign={"center"}
         paddingBottom={{ base: 4, lg: 8 }}
       >
-        {parse(title)}
+        {parse(skill.title)}
       </Heading>
       <SimpleGrid
         columns={{ base: 1, md: 2 }}
         spacing={{ base: 5, md: 10 }}
         style={{ alignContent: "stretch" }}
       >
-        <Terminal title={focusOn.title}>
+        <Terminal title={skill.focusOn.title}>
           <SimpleGrid
             padding={{ base: 3, sm: 6 }}
             spacing={{ base: 3, sm: 6 }}
             columns={{ base: 4 }}
           >
-            {focusOn.languages.map((lan, idx) => (
+            {skill.focusOn.languages.map((lan, idx) => (
               <Image
                 key={idx}
                 margin={"auto"}
@@ -38,13 +38,13 @@ const Skill = () => {
             ))}
           </SimpleGrid>
         </Terminal>
-        <Terminal title={familiarWith.title}>
+        <Terminal title={skill.familiarWith.title}>
           <SimpleGrid
             padding={{ base: 3, sm: 6 }}
             spacing={{ base: 3, sm: 6 }}
             columns={{ base: 4 }}
           >
-            {familiarWith.languages.map((lan, idx) => (
+            {skill.familiarWith.languages.map((lan, idx) => (
               <Image
                 key={idx}
                 margin={"auto"}

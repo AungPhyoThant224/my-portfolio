@@ -10,18 +10,13 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import parse from "html-react-parser";
-import { heroText, socials, socialsDark, terminal } from "../../data/hero";
+import hero from "../../data/hero";
 import { primaryBtnBorder, primaryBtnText } from "../../theme/colors";
 import Terminal from "../Terminal";
 
 const Hero = () => {
   const { colorMode } = useColorMode();
-  let socialList;
-  if (colorMode === "dark") {
-    socialList = socialsDark;
-  } else {
-    socialList = socials;
-  }
+
   return (
     <>
       <SimpleGrid
@@ -36,7 +31,7 @@ const Hero = () => {
             data-aos-easing="linear"
             fontSize={"2xl"}
           >
-            {parse(heroText.hello)}
+            {parse(hero.text.hello)}
           </Text>
           <Heading
             data-aos="fade-right"
@@ -47,7 +42,7 @@ const Hero = () => {
             fontSize={"4xl"}
             paddingY={3}
           >
-            {parse(heroText.name)}
+            {parse(hero.text.name)}
           </Heading>
           <Text
             data-aos="fade-right"
@@ -56,21 +51,25 @@ const Hero = () => {
             data-aos-easing="linear"
             fontSize={"2xl"}
           >
-            {parse(heroText.about)}
+            {parse(hero.text.about)}
           </Text>
 
           <HStack spacing={5} paddingY={5}>
-            {socialList.map((social, idx) => (
+            {hero.socials.map((social, idx) => (
               <Link key={idx} href={social.url} target="blank">
                 <Image
                   data-aos="zoom-in"
                   data-aos-duration="500"
                   data-aos-delay={700 + idx * 100}
                   data-aos-easing="linear"
-                  src={social.image}
+                  src={
+                    colorMode === "dark"
+                      ? social.image.dark
+                      : social.image.light
+                  }
                   width={"100%"}
                   height={"100%"}
-                  alt={social.name}
+                  alt={social.image.alt}
                 />
               </Link>
             ))}
@@ -99,7 +98,7 @@ const Hero = () => {
           data-aos-delay="500"
           data-aos-easing="linear"
         >
-          <Terminal title={terminal.title}>
+          <Terminal title={hero.terminal.title}>
             <Box
               p={4}
               paddingBottom={20}
@@ -109,7 +108,7 @@ const Hero = () => {
               whiteSpace={"pre-wrap"}
               color={"white"}
             >
-              {parse(terminal.code)}
+              {parse(hero.terminal.code)}
             </Box>
           </Terminal>
         </Box>

@@ -1,6 +1,6 @@
 import { AungPhyoThant } from "../assets/images";
 
-const about = {
+export default {
   name: "Aung <span className='red-text bold-text'>Phyo</span> Thant",
   position: "Full-stack Developer",
   image: {
@@ -13,5 +13,3 @@ const about = {
   second_paragraph:
     "Despite not having a formal IT degree, my hands-on experience and passion for coding have equipped me with the skills needed to create efficient and user-friendly applications. I am committed to continuous learning, enjoy exploring new technologies and mentoring aspiring developers.",
 };
-
-export { about };
