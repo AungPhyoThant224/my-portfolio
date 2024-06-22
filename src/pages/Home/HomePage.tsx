@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import Section from "../../components/Section";
 import About from "../../components/sections/About";
+import Experience from "../../components/sections/Experience";
 import Hero from "../../components/sections/Hero";
 import Skill from "../../components/sections/Skill";
 import { primaryBackground } from "../../theme/colors";
@@ -39,14 +40,24 @@ const HomePage = () => {
       </Section>
       <Section
         id="skill"
-        maxWidth="1140px"
+        maxWidth="950px"
+        display="flex"
+        background={primaryBackground()}
+        paddingTop={{ base: 20, md: 24, lg: 32, xl: 40 }}
+        as={"section"}
+      >
+        <Skill />
+      </Section>
+      <Section
+        id="experience"
+        maxWidth="950px"
         display="flex"
         background={primaryBackground()}
         paddingTop={{ base: 20, md: 24, lg: 32, xl: 40 }}
         paddingBottom={{ base: 20, md: 24, lg: 32, xl: 40 }}
         as={"section"}
       >
-        <Skill />
+        <Experience />
       </Section>
       <Section
         id="footer"

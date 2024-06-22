@@ -25,24 +25,93 @@ const title = "My <span className='red-text bold-text'>Skill</span> Set";
 
 const focusOn = {
   title: "mainly_focus_on.js",
-  languages: [react, vue, laravel, mysql, chakra, reactquery, nodejs, git],
+  languages: [
+    {
+      src: react,
+      alt: "React",
+    },
+    {
+      src: vue,
+      alt: "Vue",
+    },
+    {
+      src: laravel,
+      alt: "Laravel",
+    },
+    {
+      src: mysql,
+      alt: "MySQL",
+    },
+    {
+      src: chakra,
+      alt: "Chakra UI",
+    },
+    {
+      src: reactquery,
+      alt: "ReactQuery",
+    },
+    {
+      src: nodejs,
+      alt: "Node.js",
+    },
+    {
+      src: git,
+      alt: "Git",
+    },
+  ],
 };
 
 const familiarWith = {
   title: "familiar_with.js",
   languages: [
-    flutter,
-    typescript,
-    javascript,
-    sass,
-    mongodb,
-    express,
-    pinia,
-    elementPlus,
-    java,
-    php,
-    figma,
-    ai,
+    {
+      src: flutter,
+      alt: "Flutter",
+    },
+    {
+      src: typescript,
+      alt: "Typescript",
+    },
+    {
+      src: javascript,
+      alt: "Javascript",
+    },
+    {
+      src: sass,
+      alt: "Sass",
+    },
+    {
+      src: mongodb,
+      alt: "MongoDB",
+    },
+    {
+      src: express,
+      alt: "Express.js",
+    },
+    {
+      src: pinia,
+      alt: "Pinia",
+    },
+    {
+      src: elementPlus,
+      alt: "Element+",
+    },
+    {
+      src: java,
+      alt: "Java",
+    },
+    {
+      src: php,
+      alt: "PHP",
+    },
+    {
+      src: figma,
+      alt: "Figma",
+    },
+    {
+      src: ai,
+      alt: "Adobe Illustrator",
+    },
   ],
 };
 

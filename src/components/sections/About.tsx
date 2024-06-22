@@ -18,8 +18,8 @@ const About = () => {
         <Image
           className="custom-box-shadow"
           borderTopRadius={"xl"}
-          src={about.image}
-          alt="Aung Phyo Thant"
+          src={about.image.src}
+          alt={about.image.alt}
         />
         <Text fontSize={"xl"} marginTop={3}>
           {parse(about.name)}

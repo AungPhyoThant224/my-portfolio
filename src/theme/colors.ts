@@ -10,7 +10,8 @@ const primaryGradientBorder = () =>
     "linear(to-l, gray.800, red.500, gray.800)"
   );
 const primaryBorder = () => useColorModeValue("red", "red.500");
-const terminalBoarder = () => useColorModeValue("white", "white");
+const terminalBorder = () => useColorModeValue("white", "white");
+const stepperBorder = () => useColorModeValue("red", "whiteAlpha.900");
 
 //Text
 const primaryText = () => useColorModeValue("blackAlpha.700", "whiteAlpha.600");
@@ -32,7 +33,8 @@ export {
   //Border
   primaryGradientBorder,
   primaryBorder,
-  terminalBoarder,
+  terminalBorder,
+  stepperBorder,
 
   //Text
   primaryText,

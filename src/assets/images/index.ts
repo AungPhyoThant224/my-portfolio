@@ -2,6 +2,10 @@
 import AungPhyoThant from "./profile/AungPhyoThant.webp";
 
 //Icons
+import bagWhite from "./icons/bag-white.svg";
+import bag from "./icons/bag.svg";
+import bookWhite from "./icons/book-white.svg";
+import book from "./icons/book.svg";
 import close from "./icons/close.svg";
 import closeWhite from "./icons/close-white.svg";
 import menu from "./icons/menu.svg";
@@ -46,6 +50,10 @@ export {
   AungPhyoThant,
 
   //Icons
+  bagWhite,
+  bag,
+  bookWhite,
+  book,
   close,
   closeWhite,
   menu,

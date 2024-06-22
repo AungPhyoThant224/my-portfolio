@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { ReactNode } from "react";
+import { terminalBorder } from "../theme/colors";
 
 interface Props {
   title: string;
@@ -15,7 +16,7 @@ const Terminal = ({ title, children }: Props) => {
       bg="gray.800"
       borderRadius="xl"
       border={"1px"}
-      borderColor={"white"}
+      borderColor={terminalBorder()}
       overflow="hidden"
     >
       {/* Title Bar */}

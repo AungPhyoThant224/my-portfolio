@@ -29,7 +29,8 @@ const Skill = () => {
               <Image
                 key={idx}
                 margin={"auto"}
-                src={lan}
+                src={lan.src}
+                alt={lan.alt}
                 maxWidth={{ base: "80px" }}
                 maxHeight={{ base: "80px" }}
                 width={"100%"}
@@ -47,7 +48,8 @@ const Skill = () => {
               <Image
                 key={idx}
                 margin={"auto"}
-                src={lan}
+                src={lan.src}
+                alt={lan.alt}
                 maxWidth={{ base: "80px" }}
                 maxHeight={{ base: "80px" }}
                 width={"100%"}
