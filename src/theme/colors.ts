@@ -19,7 +19,7 @@ const secText = () => useColorModeValue("red", "red.500");
 const secHeading = () => useColorModeValue("blackAlpha.500", "whiteAlpha.600");
 
 //Card
-const primaryCard = () => useColorModeValue("white", "gray.700");
+const primaryCard = () => useColorModeValue("gray.50", "gray.700");
 
 //Button
 const primaryBtnBackground = () => useColorModeValue("gray.100", "gray.700");

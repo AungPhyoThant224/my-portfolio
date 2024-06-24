@@ -28,14 +28,10 @@ html {
   color: var(--sec-text);
 }
 
-.green-text {
-  color: #48bb78;
-}
-
-.dark-yellow-text {
-  color: #d69e2e;
-}
-
 .bold-text {
   font-weight: bold;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
 }

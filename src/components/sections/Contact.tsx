@@ -5,12 +5,14 @@ import {
   Image,
   SimpleGrid,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 import parse from "html-react-parser";
 import contact from "../../data/contact";
-import { secHeading } from "../../theme/colors";
+import { primaryCard, secHeading } from "../../theme/colors";
 
 const Contact = () => {
+  const { colorMode } = useColorMode();
   return (
     <>
       <Heading
@@ -25,6 +27,7 @@ const Contact = () => {
         className="custom-box-shadow"
         borderRadius={"xl"}
         textAlign={"center"}
+        background={primaryCard()}
         paddingY={5}
         paddingX={{ base: 5, sm: 8 }}
       >
@@ -40,13 +43,17 @@ const Contact = () => {
           {contact.buttons.map((button, idx) => (
             <Button
               as={"a"}
-              target={"_blank"}
+              target={button.platform == "Mail" ? "_self" : "_blank"}
               href={button.url}
               key={idx}
               leftIcon={
                 <Image
                   maxW={"80%"}
-                  src={button.image.dark}
+                  src={
+                    colorMode === "dark"
+                      ? button.image.dark
+                      : button.image.light
+                  }
                   alt={button.image.alt}
                 />
               }

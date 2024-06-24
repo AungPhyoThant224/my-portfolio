@@ -56,7 +56,11 @@ const Hero = () => {
 
           <HStack spacing={5} paddingY={5}>
             {hero.socials.map((social, idx) => (
-              <Link key={idx} href={social.url} target="blank">
+              <Link
+                key={idx}
+                href={social.url}
+                target={social.image.alt == "Mail" ? "_self" : "_blank"}
+              >
                 <Image
                   data-aos="zoom-in"
                   data-aos-duration="500"
