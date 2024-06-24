@@ -18,7 +18,7 @@ export default {
         [
           "<span className='red-text'>Varoon Valley</span>: The company’s portfolio site showcasing its services.",
           "<span className='red-text'>OMNI Zae</span>: A POS system designed to streamline retail operations.",
-          "<span className='red-text'>Bee Coding AI Training</span>: We trained the AI to respond to prompts with greater accuracy, conciseness, correct grammar, etc.",
+          "<span className='red-text'>Bee Coding AI Training</span>: We trained the AI to respond to user prompts with greater accuracy, conciseness, correct grammar, etc.",
         ],
       ],
     },

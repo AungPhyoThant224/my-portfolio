@@ -25,6 +25,7 @@ const primaryCard = () => useColorModeValue("white", "gray.700");
 const primaryBtnBackground = () => useColorModeValue("gray.100", "gray.700");
 const primaryBtnBorder = () => useColorModeValue("red", "red.500");
 const primaryBtnText = () => useColorModeValue("red", "red.500");
+const telegramBtnBorder = () => useColorModeValue("#2BACEE", "#2BACEE");
 
 export {
   //Background
@@ -48,4 +49,5 @@ export {
   primaryBtnBackground,
   primaryBtnBorder,
   primaryBtnText,
+  telegramBtnBorder,
 };
