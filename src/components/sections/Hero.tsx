@@ -29,7 +29,7 @@ const Hero = () => {
             data-aos="fade-right"
             data-aos-duration="500"
             data-aos-easing="linear"
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", sm: "2xl" }}
           >
             {parse(hero.text.hello)}
           </Text>
@@ -39,7 +39,7 @@ const Hero = () => {
             data-aos-delay="200"
             data-aos-easing="linear"
             as={"h1"}
-            fontSize={"4xl"}
+            fontSize={{ base: "3xl", sm: "4xl" }}
             paddingY={3}
           >
             {parse(hero.text.name)}
@@ -49,7 +49,7 @@ const Hero = () => {
             data-aos-duration="500"
             data-aos-delay="400"
             data-aos-easing="linear"
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", sm: "2xl" }}
           >
             {parse(hero.text.about)}
           </Text>

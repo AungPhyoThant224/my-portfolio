@@ -34,10 +34,10 @@ const About = () => {
         <Heading paddingBottom={4} as={"h2"} fontSize={"3xl"}>
           {parse(about.title)}
         </Heading>
-        <Text paddingBottom={4} fontSize={"xl"}>
+        <Text paddingBottom={4} fontSize={{ base: "lg", sm: "xl" }}>
           {parse(about.first_paragraph)}
         </Text>
-        <Text paddingBottom={4} fontSize={"xl"}>
+        <Text paddingBottom={4} fontSize={{ base: "lg", sm: "xl" }}>
           {parse(about.second_paragraph)}
         </Text>
       </Box>

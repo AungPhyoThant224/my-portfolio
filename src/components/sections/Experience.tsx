@@ -59,10 +59,14 @@ const Experience = () => {
             </Box>
             <VStack align="start" spacing={2} w="full">
               <Box>
-                <Text fontWeight="bold" color={secText()} fontSize="lg">
+                <Text
+                  fontWeight="bold"
+                  color={secText()}
+                  fontSize={{ base: "lg", sm: "2xl" }}
+                >
                   {parse(step.company)}
                 </Text>
-                <Text fontSize="sm" color={secHeading()}>
+                <Text fontSize={{ base: "sm", sm: "md" }} color={secHeading()}>
                   {parse(step.position)}
                 </Text>
               </Box>
@@ -76,6 +80,7 @@ const Experience = () => {
                             as="span"
                             whiteSpace="normal"
                             wordBreak="break-word"
+                            fontSize={{ base: "lg", sm: "xl" }}
                           >
                             {parse(subDetail)}
                           </Text>
@@ -84,11 +89,11 @@ const Experience = () => {
                     </List>
                   ) : (
                     <ListItem key={idx}>
-                      {/* <ListIcon as={MdCheckCircle} color="green.500" /> */}
                       <Text
                         as="span"
                         whiteSpace="normal"
                         wordBreak="break-word"
+                        fontSize={{ base: "lg", sm: "xl" }}
                       >
                         {parse(detail)}
                       </Text>
