@@ -2,6 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import { primaryGradientBorder } from "../theme/colors";
 
 const Footer = () => {
+  const currentYear: number = new Date().getFullYear();
   return (
     <>
       <Box
@@ -9,8 +10,8 @@ const Footer = () => {
         width={"100%"}
         height={"1px"}
       ></Box>
-      <Box paddingY={5}>
-        <Text>Designed and Build by Aung Phyo Thant.</Text>
+      <Box paddingY={5} textAlign={"center"}>
+        <Text>&copy; {currentYear} Aung Phyo Thant. All rights reserved.</Text>
       </Box>
     </>
   );
