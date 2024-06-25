@@ -13,6 +13,7 @@ import parse from "html-react-parser";
 import hero from "../../data/hero";
 import { primaryBtnBorder, primaryBtnText } from "../../theme/colors";
 import Terminal from "../Terminal";
+import { resume } from "../../assets/pdfs";
 
 const Hero = () => {
   const { colorMode } = useColorMode();
@@ -80,6 +81,9 @@ const Hero = () => {
             data-aos-easing="linear"
           >
             <Button
+              as={"a"}
+              href={resume}
+              download
               className="custom-box-shadow"
               colorScheme=""
               color={primaryBtnText()}
