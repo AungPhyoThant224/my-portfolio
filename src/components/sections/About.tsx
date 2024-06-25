@@ -10,6 +10,7 @@ const About = () => {
       flexDirection={{ base: "column-reverse", lg: "row" }}
     >
       <Box
+        data-aos="fade-right"
         maxWidth={{ base: "300px", lg: "auto" }}
         textAlign={"center"}
         margin={{ base: "auto", lg: 0 }}
@@ -27,6 +28,7 @@ const About = () => {
         <Text color={secHeading()}>{parse(about.position)}</Text>
       </Box>
       <Box
+        data-aos="fade-left"
         marginLeft={{ base: 0, lg: 10 }}
         marginBottom={{ base: 10, lg: 0 }}
         textAlign={{ base: "center", lg: "left" }}

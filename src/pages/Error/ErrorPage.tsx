@@ -40,8 +40,6 @@ const ErrorPage = () => {
       >
         <Box
           data-aos="zoom-in"
-          data-aos-duration="300"
-          data-aos-easing="linear"
           height={"100vh"}
           width={"fit-content"}
           margin={"auto"}

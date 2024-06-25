@@ -31,7 +31,7 @@ const Experience = () => {
       <VStack align="start" spacing={4} w="full">
         {experience.steps.map((step, index) => (
           <HStack key={index} align="stretch" w="full" spacing={4}>
-            <Box position="relative">
+            <Box data-aos="fade-right" position="relative">
               <Box
                 boxSize={iconSize}
                 borderRadius="full"
@@ -57,7 +57,7 @@ const Experience = () => {
                 />
               )}
             </Box>
-            <VStack align="start" spacing={2} w="full">
+            <VStack data-aos="fade-left" align="start" spacing={2} w="full">
               <Box>
                 <Text
                   fontWeight="bold"

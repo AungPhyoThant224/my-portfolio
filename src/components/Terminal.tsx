@@ -4,14 +4,16 @@ import { terminalBorder } from "../theme/colors";
 
 interface Props {
   title: string;
+  height?: string | number;
   children: ReactNode;
 }
 
-const Terminal = ({ title, children }: Props) => {
+const Terminal = ({ title, height, children }: Props) => {
   return (
     <Box
       className="custom-box-shadow"
       w="100%"
+      h={height}
       maxW="800px"
       bg="gray.800"
       borderRadius="xl"

@@ -27,7 +27,6 @@ const Hero = () => {
         <Box marginBottom={{ base: 4, md: 0 }}>
           <Text
             data-aos="fade-right"
-            data-aos-duration="500"
             data-aos-easing="linear"
             fontSize={{ base: "xl", sm: "2xl" }}
           >
@@ -35,7 +34,6 @@ const Hero = () => {
           </Text>
           <Heading
             data-aos="fade-right"
-            data-aos-duration="500"
             data-aos-delay="200"
             data-aos-easing="linear"
             as={"h1"}
@@ -46,7 +44,6 @@ const Hero = () => {
           </Heading>
           <Text
             data-aos="fade-right"
-            data-aos-duration="500"
             data-aos-delay="400"
             data-aos-easing="linear"
             fontSize={{ base: "xl", sm: "2xl" }}
@@ -63,7 +60,6 @@ const Hero = () => {
               >
                 <Image
                   data-aos="zoom-in"
-                  data-aos-duration="500"
                   data-aos-delay={700 + idx * 100}
                   data-aos-easing="linear"
                   src={
@@ -80,7 +76,6 @@ const Hero = () => {
           </HStack>
           <Box
             data-aos="fade-right"
-            data-aos-duration="500"
             data-aos-delay="800"
             data-aos-easing="linear"
           >
@@ -96,23 +91,24 @@ const Hero = () => {
             </Button>
           </Box>
         </Box>
-        <Box
-          data-aos="fade-down"
-          data-aos-duration="500"
-          data-aos-delay="500"
-          data-aos-easing="linear"
-        >
+        <Box data-aos="fade-down" data-aos-delay="500" data-aos-easing="linear">
           <Terminal title={hero.terminal.title}>
             <Box
               p={4}
               paddingBottom={20}
               fontFamily="monospace"
               fontSize={{ base: "xs" }}
-              bg="black"
               whiteSpace={"pre-wrap"}
-              color={"white"}
+              color={"whiteAlpha.900"}
             >
-              {parse(hero.terminal.code)}
+              {parse(hero.terminal.code)}{" "}
+              <Box
+                as="span"
+                fontSize={{ base: "md" }}
+                className="blinking-cursor"
+              >
+                |
+              </Box>
             </Box>
           </Terminal>
         </Box>

@@ -20,6 +20,10 @@ html {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 .custom-box-shadow {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px 1px;
 }
