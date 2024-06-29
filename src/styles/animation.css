@@ -45,7 +45,7 @@
 }
 
 .pop-on-hover::after {
-  content: url("./../assets/images/icons/info.svg");
+  content: url("");
   position: absolute;
   /* background: #cbd5e066; */
   backdrop-filter: blur(3px);
