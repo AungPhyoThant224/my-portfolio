@@ -79,14 +79,14 @@ export default {
         src: sass,
         alt: "Sass",
       },
-      {
-        src: mongodb,
-        alt: "MongoDB",
-      },
-      {
-        src: express,
-        alt: "Express.js",
-      },
+      // {
+      //   src: mongodb,
+      //   alt: "MongoDB",
+      // },
+      // {
+      //   src: express,
+      //   alt: "Express.js",
+      // },
       {
         src: pinia,
         alt: "Pinia",
