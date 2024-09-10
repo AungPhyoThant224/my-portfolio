@@ -31,7 +31,9 @@ import php from "./languages/php.svg";
 import pinia from "./languages/pinia.svg";
 import react from "./languages/react.svg";
 import reactquery from "./languages/reactquery.svg";
+import redux from "./languages/redux.svg";
 import sass from "./languages/sass.svg";
+import tailwind from "./languages/tailwind.svg";
 import typescript from "./languages/typescript.svg";
 import vue from "./languages/vue.svg";
 
@@ -79,7 +81,9 @@ export {
   pinia,
   react,
   reactquery,
+  redux,
   sass,
+  tailwind,
   typescript,
   vue,
 

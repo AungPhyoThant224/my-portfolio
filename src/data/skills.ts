@@ -11,12 +11,14 @@ import {
   laravel,
   // mongodb,
   mysql,
-  nodejs,
+  // nodejs,
   php,
   pinia,
   react,
   reactquery,
+  redux,
   sass,
+  tailwind,
   typescript,
   vue,
 } from "../assets/images";
@@ -47,13 +49,21 @@ export default {
         alt: "Chakra UI",
       },
       {
+        src: tailwind,
+        alt: "Tailwind Css",
+      },
+      {
+        src: redux,
+        alt: "Redux",
+      },
+      {
         src: reactquery,
         alt: "ReactQuery",
       },
-      {
-        src: nodejs,
-        alt: "Node.js",
-      },
+      // {
+      //   src: nodejs,
+      //   alt: "Node.js",
+      // },
       {
         src: git,
         alt: "Git",

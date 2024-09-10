@@ -56,8 +56,8 @@ export default {
       ],
     },
     {
-      company: "Tastysoft Software Co.,Ltd",
-      position: "Apprenticeship (Aug 2019 - May 2022)",
+      company: "Mogok Foundation + Tastysoft Software Co.,Ltd",
+      position: "Professional Programming Class (Aug 2019 - May 2022)",
       icon: {
         light: book,
         dark: bookWhite,
@@ -66,7 +66,7 @@ export default {
       details: [
         "Basic programming with Java.",
         "Fundamental web development with HTML, CSS, JavaScript, and Bootstrap.",
-        "Self-studied mobile app development with Dart and Flutter.",
+        "Mobile app development with Dart and Flutter.",
       ],
     },
   ],
