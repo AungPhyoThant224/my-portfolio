@@ -12,28 +12,24 @@ export default {
         alt: "bag",
       },
       details: [
-        "Developed multiple web applications using React with TypeScript for the front-end and Laravel 10 for the back-end.",
-        "Collaborated with a strong team to develop applications from the ground up, including project research, planning, database design, and user interface design.",
-        "Notable projects include:",
-        [
-          "<span className='red-text'>Varoon Valley</span>: The company’s portfolio site showcasing its services.",
-          "<span className='red-text'>OMNI Zae</span>: A POS system designed to streamline retail operations.",
-          "<span className='red-text'>Bee Coding AI Training</span>: We trained the AI to respond to user prompts with greater accuracy, conciseness, correct grammar, etc.",
-        ],
+        "Developed several web applications using React and TypeScript for the front-end and Laravel for the back-end.",
+        "Collaborated with cross-functional teams on full project lifecycles, from research and planning to UI/UX design and database structuring.",
+        "Contributed to creating Varoon Valley's portfolio site, improving service presentation and customer engagement.",
+        "Contributed to the development of OMNI Zae, a POS system designed to streamline retail operations.",
+        "Collaborated on an AI training project, enabled by our founder's connections in the USA, to enhance user prompt responses and improve grammatical accuracy.",
       ],
     },
     {
       company: "Unity Power Technology Co.,Ltd",
-      position: "Front-end Developer (Sep 2022 - Feb 2023)",
+      position: "Front-end Developer (Oct 2022 - Feb 2023)",
       icon: {
         light: bag,
         dark: bagWhite,
         alt: "bag",
       },
       details: [
-        "Primarily focused on developing web applications using Vue.js and vanilla JavaScript.",
-        "Developed maintainable and responsive designs, ensuring seamless user experiences with guidance from skilled senior developers.",
-        "Collaborated with team leaders and designers to determine project scope and requirements.",
+        "Developed responsive and maintainable web applications using Vue.js and JavaScript.",
+        "Collaborated closely with team members, designers, and project managers to ensure development aligned with business goals and met user expectations.",
       ],
     },
     {
@@ -45,9 +41,10 @@ export default {
         alt: "bag",
       },
       details: [
-        "Developed multiple mobile applications for both Android and iOS using Flutter.",
+        "Developed and deployed multiple mobile applications using Flutter.",
+        "• Successfully launched Doctor Link (version 1.0) for both Android and iOS, enabling seamless communication and job information sharing among hospitals, clinics, and doctors.",
         "Attended daily meetings at 9:00 AM to discuss workflows and receive guidance from senior developers for task allocation.",
-        "Gained experience in:",
+        "Notable projects include:",
         [
           "<span className='red-text'>Doctor Link</span>: Facilitated connections and job information sharing among hospitals, clinics, and doctors.",
           "<span className='red-text'>Connect GRX</span>: Designed for professional taxi drivers.",
