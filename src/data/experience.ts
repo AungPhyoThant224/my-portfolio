@@ -4,6 +4,24 @@ export default {
   title: "My <span className='red-text bold-text'>Experiences</span>",
   steps: [
     {
+      company: "code2LAB",
+      position: "Full-stack Developer (November 2024 - Current )",
+      icon: {
+        light: bag,
+        dark: bagWhite,
+        alt: "bag",
+      },
+      details: [
+        "Collaborated with Operation Team to understand the project and real life problem from the clients.",
+        "Developed and maintained features for SX-Foodcourt, SX-KTV, and SX-Restaurant POS systems, enhancing second display functionality (shop name, slim scroll, discount display).",
+        "Implemented comprehensive inventory reporting, including tracking closing, sold, void, and waste quantities, and generating reports on shift open/close.",
+        "Improved customer management by adding queue-based customer assignment, booking time integration, and fixing update errors.",
+        "Enhanced payment processing by addressing credit payment calculation issues across shifts and adding features for discount, FOC (Free of Charge), and split payment for credit sales.",
+        "Introduced menu item auditing and price change reporting, ensuring data integrity and traceability for menu modifications.",
+        "Refactored database schemas to improve data handling, such as changing valid time columns in menus from time to datetime format.",
+      ],
+    },
+    {
       company: "Varoon Valley Ltd",
       position: "Full-stack Developer (May 2023 - May 2024)",
       icon: {
@@ -42,7 +60,7 @@ export default {
       },
       details: [
         "Developed and deployed multiple mobile applications using Flutter.",
-        "• Successfully launched Doctor Link (version 1.0) for both Android and iOS, enabling seamless communication and job information sharing among hospitals, clinics, and doctors.",
+        "Successfully launched Doctor Link (version 1.0) for both Android and iOS, enabling seamless communication and job information sharing among hospitals, clinics, and doctors.",
         "Attended daily meetings at 9:00 AM to discuss workflows and receive guidance from senior developers for task allocation.",
         "Notable projects include:",
         [
