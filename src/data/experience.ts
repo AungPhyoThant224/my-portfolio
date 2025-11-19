@@ -12,13 +12,10 @@ export default {
         alt: "bag",
       },
       details: [
-        "Collaborated with Operation Team to understand the project and real life problem from the clients.",
-        "Developed and maintained features for SX-Foodcourt, SX-KTV, and SX-Restaurant POS systems, enhancing second display functionality (shop name, slim scroll, discount display).",
-        "Implemented comprehensive inventory reporting, including tracking closing, sold, void, and waste quantities, and generating reports on shift open/close.",
-        "Improved customer management by adding queue-based customer assignment, booking time integration, and fixing update errors.",
-        "Enhanced payment processing by addressing credit payment calculation issues across shifts and adding features for discount, FOC (Free of Charge), and split payment for credit sales.",
-        "Introduced menu item auditing and price change reporting, ensuring data integrity and traceability for menu modifications.",
-        "Refactored database schemas to improve data handling, such as changing valid time columns in menus from time to datetime format.",
+        "SX Central Dashboard: Engineered a multi-tenancy reporting dashboard using Ruby on Rails 8, utilizing an aggregator pattern to dynamically connect to distributed shop databases for real-time MMQR transaction consolidation.",
+        "Payment Gateway Integration: Executed full integration of MMQR payment gateways (KBZ Merchant API) for Smart Pay and SX-Top Up, enabling real-time payment verification and dynamic QR code generation on secondary displays.",
+        "Reporting & Auditing: Designed a comprehensive inventory reporting module and instituted menu item auditing with price change reporting, ensuring data integrity and maintaining a traceable history of modifications.",
+        "Feature Development: Implemented advanced payment processing capabilities such as split payments, FOC transactions, and a centralized printing service for accurate receipt generation across multiple POS platforms.",
       ],
     },
     {
@@ -30,24 +27,10 @@ export default {
         alt: "bag",
       },
       details: [
-        "Developed several web applications using React and TypeScript for the front-end and Laravel for the back-end.",
-        "Collaborated with cross-functional teams on full project lifecycles, from research and planning to UI/UX design and database structuring.",
-        "Contributed to creating Varoon Valley's portfolio site, improving service presentation and customer engagement.",
-        "Contributed to the development of OMNI Zae, a POS system designed to streamline retail operations.",
-        "Collaborated on an AI training project, enabled by our founder's connections in the USA, to enhance user prompt responses and improve grammatical accuracy.",
-      ],
-    },
-    {
-      company: "Unity Power Technology Co.,Ltd",
-      position: "Front-end Developer (Oct 2022 - Feb 2023)",
-      icon: {
-        light: bag,
-        dark: bagWhite,
-        alt: "bag",
-      },
-      details: [
-        "Developed responsive and maintainable web applications using Vue.js and JavaScript.",
-        "Collaborated closely with team members, designers, and project managers to ensure development aligned with business goals and met user expectations.",
+        "Architected and developed scalable web applications using React and TypeScript for the frontend and Laravel for the backend.",
+        "Played a key role in the development of OMNI Zae, a Point of Sale (POS) system, streamlining retail operations.",
+        "Built and optimized the company’s portfolio site, significantly improving service presentation and customer engagement.",
+        "Collaborated on an AI training initiative to enhance user prompt responses and grammatical accuracy for US-based clients.",
       ],
     },
     {
@@ -59,9 +42,10 @@ export default {
         alt: "bag",
       },
       details: [
-        "Developed and deployed multiple mobile applications using Flutter.",
-        "Successfully launched Doctor Link (version 1.0) for both Android and iOS, enabling seamless communication and job information sharing among hospitals, clinics, and doctors.",
-        "Attended daily meetings at 9:00 AM to discuss workflows and receive guidance from senior developers for task allocation.",
+        "Built and deployed cross-platform mobile applications using Flutter.",
+        "Successfully launched Doctor Link (v1.0) for Android, facilitating seamless job sharing between hospitals and doctors.",
+        "Participated in Agile workflows, daily stand-ups, and sprint planning.",
+        "Collaborated on the development of Connect GRX and Connect 365 (projects by MIT), implementing specific feature sets for driver management and employee productivity.",
         "Notable projects include:",
         [
           "<span className='red-text'>Doctor Link</span>: Facilitated connections and job information sharing among hospitals, clinics, and doctors.",
